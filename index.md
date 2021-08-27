@@ -14,7 +14,7 @@ Use the links above to navigate the site.  The [Syllabus](syllabus.html) describ
 
 ## Important links
 
-* Campuswire (ask questions here!): <https://piazza.com/jhu/fall2020/601428>
+* Campuswire (ask questions here!): <https://campuswire.com>
 * Gradescope (assignment submission): <https://www.gradescope.com/>
 
 Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or Gradescope.
