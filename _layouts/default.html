@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>{{site.coursename}}: {{page.title}}</title>
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/compilers.css">
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/syntax.css">
+	<link rel="shortcut icon" href="{{site.baseurl}}/img/favicon.png">
+	<script type="text/javascript" src="{{site.baseurl}}/js/compilers.js"></script>
+</head>
+
+<body>
+	<div id="content">
+    <div id="navbar_container">
+  		<div id="navbar">
+  			<span class="compilers">Compilers@JHU</span>
+  			<a id="navbar_home" href="{{site.baseurl}}/index.html">Home</a>
+  			<a id="navbar_syllabus" href="{{site.baseurl}}/syllabus.html">Syllabus</a>
+  			<a id="navbar_schedule" href="{{site.baseurl}}/schedule.html">Schedule</a>
+  			<a id="navbar_assignments" href="{{site.baseurl}}/assignments.html">Assignments</a>
+  			<a id="navbar_resources" href="{{site.baseurl}}/resources.html">Resources</a>
+  		</div>
+    </div>
+
+		<hr id="headerSep">
+
+		<div style="text-align: center; font-style: italic; font-size: 120%; margin-top: 1em;">
+			Preliminary course website — not official yet!
+		</div>
+
+		<div id="pageTitle">{{site.coursename}}: {{page.title}}</div>
+
+		{{content}}
+
+		<div id="footer"></div>
+
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+				compilers.pageCategory = "{{page.category}}";
+				compilers.onLoad();
+			});
+		</script>
+	</div>
+</body>
+
+</html>
+
+<!--
+vim:ts=2:
+-->
