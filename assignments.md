@@ -10,4 +10,4 @@ Please make note of our expectations for [design, coding style, and efficiency](
 
 Assignment | Due
 ---------- | ---
-[Assignment 1: TBD](assign/assign01.html) | TBD
+[Assignment 1: Mini Calculator](assign/assign01.html) | Wed Sept 15th by 11pm

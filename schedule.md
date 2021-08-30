@@ -22,7 +22,7 @@ Wed, Sep 1 | Context free grammars, parse trees, ambiguity, recursive descent pa
 Mon, Sep 6 | *Holiday, no class*
 Wed, Sep 8 | Limitations of recursive descent, precedence climbing: [slides](lectures/lecture03-public.pdf) | EaC 3.3
 Mon, Sep 13 | Lexical analyzer generators, lex/flex: [slides](lectures/lecture04-public.pdf), [lexdemo.zip](lectures/lexdemo.zip) | EaC 2.1–2.5,<br>F&amp;B Chapters 1–2
-Wed, Sep 15 | LL(1) parsing: [slides](lectures/lecture05-public.pdf) | EaC 3.3 | [A1](assign/assign01.html) due 9/18
+Wed, Sep 15 | LL(1) parsing: [slides](lectures/lecture05-public.pdf) | EaC 3.3 | [A1](assign/assign01.html) due
 Mon, Sep 20 | <!--Parser generators, yacc/bison: [slides](lectures/lecture06-public.pdf) --> | <!-- F&amp;B Chapter 3-->
 Wed, Sep 22 | <!--Bottom-up parsing: [slides](lectures/lecture07-public.pdf) --> | <!-- EaC 3.4-->
 Mon, Sep 27 | <!--<b>Exam 1 out</b>, ASTs, Interpreters: [slides](lectures/lecture08-public.pdf) --> | <!-- -->
