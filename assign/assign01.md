@@ -3,11 +3,6 @@ layout: default
 title: "Assignment 1: Mini Calculator"
 ---
 
-<div style="text-align: center; font-style: italic; font-size: 120%;">
-  Note: this assignment description is not 100% final at this point,
-  changes are possible
-</div>
-
 Due: **Wednesday, Sept 15th** by 11pm
 
 Points: This assignment is worth 100 points

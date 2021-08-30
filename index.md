@@ -21,4 +21,4 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
-* **Aug 30** — Welcome!
+* **Aug 30** — Welcome! [Assignment 1](assign/assign01.html) has been posted, and is due Wednesday, Sept 15th by 11pm.
