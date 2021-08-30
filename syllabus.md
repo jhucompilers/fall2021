@@ -16,7 +16,7 @@ category: "syllabus"
 
 Office: Malone 240A
 
-Office hours: TBD
+Office hours: T/Th 1-3pm, or by arrangement, via Zoom (see Campuswire for URL)
 
 ## Course Assistants
 
