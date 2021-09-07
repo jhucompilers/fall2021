@@ -21,4 +21,5 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Campuswire and/or 
 
 ## News
 
+* **Sep 7** — The assignment description for [Assignment 1](assign/assign01.html) has been updated to clarify that the functional requirements for the assignment are the same for students in 601.428 and 601.628.
 * **Aug 30** — Welcome! [Assignment 1](assign/assign01.html) has been posted, and is due Wednesday, Sept 15th by 11pm.

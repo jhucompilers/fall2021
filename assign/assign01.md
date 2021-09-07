@@ -7,6 +7,8 @@ Due: **Wednesday, Sept 15th** by 11pm
 
 Points: This assignment is worth 100 points
 
+*Update 9/7*: Removed language implying that the requirements are different for students in 601.628 (vs. 601.428)
+
 # Overview
 
 In this assignment you will implement a mini calculator program which can evaluate infix
@@ -104,8 +106,6 @@ The `=` operator performs variable assignment.  Note that the left-hand operand 
 is a syntactically valid expression according to the [Syntax](#syntax) section above, it is not semantically valid because the left hand side is not an identifier.  The result of evaluating an assignment expression is the same as the result of evaluating the right-hand subexpression.  So, the result of evaluating `a = 3` is 3.  Note that because assignments are right-associative, they may be "chained".  For example, the expression `a = b = 3` will assign the value 3 to both `b` and `a`.
 
 Your calculator program should evaluate each expression in order.  If a variable is assigned in an earlier expression, its value can be used in a later expression.  For variables defined by assignments, an assignment must occur before any use of the value of the variable.  The result of evaluating the last expression is the overall result of the entire unit.
-
-Note that if you are taking 601.628, you will be required to support *weak assignments*, which work somewhat differently than normal assignments.  See [Additional requirements for 628 students](#additional-requirements-for-628-students).
 
 # Requirements
 
