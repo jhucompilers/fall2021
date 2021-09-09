@@ -20,7 +20,9 @@ Office hours: T/Th 1-3pm, or by arrangement, via Zoom (see Campuswire for URL)
 
 ## Course Assistants
 
-TBD
+Anshul Singhal (office hours Sunday 2-4 PM, Malone 216)
+
+Shravan Venkatesan (office hours Wednesday 2-4 PM, Malone 122)
 
 ## Meeting
 
