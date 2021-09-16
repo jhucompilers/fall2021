@@ -24,9 +24,9 @@ Wed, Sep 8 | Limitations of recursive descent, precedence climbing: [slides](lec
 Mon, Sep 13 | Lexical analyzer generators, lex/flex: [slides](lectures/lecture04-public.pdf), [lexdemo.zip](lectures/lexdemo.zip) | EaC 2.1–2.5,<br>F&amp;B Chapters 1–2
 Wed, Sep 15 | LL(1) parsing: [slides](lectures/lecture05-public.pdf) | EaC 3.3 | [A1](assign/assign01.html) due
 Mon, Sep 20 | Parser generators, yacc/bison: [slides](lectures/lecture06-public.pdf)  | F&amp;B Chapter 3
-Wed, Sep 22 | Bottom-up parsing: [slides](lectures/lecture07-public.pdf)  |  EaC 3.4
-Mon, Sep 27 | ASTs, Interpreters: [slides](lectures/lecture08-public.pdf)  | 
-Wed, Sep 29 | Interpreter runtime structures: [slides](lectures/lecture09-public.pdf), Exam 1 review  | <!-- -->
+Wed, Sep 22 | ASTs, Interpreters: [slides](lectures/lecture07-public.pdf)  | 
+Mon, Sep 27 | Interpreter runtime structures: [slides](lectures/lecture08-public.pdf), Exam 1 review  | <!-- -->
+Wed, Sep 29 | Bottom-up parsing: [slides](lectures/lecture09-public.pdf)  |  EaC 3.4
 Mon, Oct 4 | **Exam 1** in class
 Wed, Oct 6 | <!--Context-sensitive analysis, attribute grammars: [slides](lectures/Context_sensitive_Analysis_I.pdf) --> | <!-- EaC 4.1–4.3-->
 Mon, Oct 11 | <!--Context-sensitive analysis, ad-hoc techniques: [slides](lectures/Context_sensitive_Analysis_II.pdf) --> | <!-- EaC 4.4-->
