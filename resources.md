@@ -9,3 +9,15 @@ category: "resources"
 * [Brown x64 cheat sheet](https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf)
 * [Brown gdb cheat sheet](https://cs.brown.edu/courses/cs033/docs/guides/gdb.pdf)
 * [CMU summary of gdb commands for x86-64](http://csapp.cs.cmu.edu/3e/docs/gdbnotes-x86-64.pdf)
+
+# Exam review materials
+
+Note that in Fall 2020 the exams were take-home, but this semester (Fall 2021)
+the exams will be in class.  So, the format of the exams you will take may
+be somewhat different.  However, the Fall 2020 exams are still a good way
+for you to review the topics.
+
+For Exam 1:
+
+* [Fall 2020 Exam 1](resources/exam01-628.pdf) (All questions are relevant)
+* [Fall 2020 Exam 2](resources/exam02-628.pdf) (Questions 1–5 are relevant)

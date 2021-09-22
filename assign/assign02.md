@@ -511,4 +511,4 @@ zip -9r solution.zip Makefile *.h *.c *.y *.l *.cpp *.rb
 
 The suggested command would create a zipfile called `solution.zip`.  Note that if your solution uses C exclusively, you can omit `*.cpp` from the filename patterns.  If you used the `scan_grammar_symbols.rb` script, them make sure you include the `*.rb` pattern as shown above.
 
-Upload your submission to [Gradescope](https://www.gradescope.com).  If you are registered for 601.428, upload to **Assign02&#95;428**.  If you are registered for 601.628, upload to **Assign02&#95;628**.
+Upload your submission to [Gradescope](https://www.gradescope.com) as **Assignment 2**.
