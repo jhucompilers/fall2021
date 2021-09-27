@@ -31,6 +31,8 @@ and/or Gradescope.
 
 ## News
 
+* **Sep 27** — For Exam 1, you may bring two sheets of *handwritten*
+  notes to use during the exam.
 * **Sep 22** — Exam 1 will take place in class on Monday, Oct
   4th. Review materials are available on the [Resources](resources.html)
   page. Also, the slides for Lectures 6–9 linked from the
