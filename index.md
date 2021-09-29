@@ -31,6 +31,8 @@ and/or Gradescope.
 
 ## News
 
+* **Sep 29** — Solutions to practice exams 1 and 2 are available on the
+  [Resources](resources.html) page.
 * **Sep 27** — For Exam 1, you may bring two sheets of *handwritten*
   notes to use during the exam.
 * **Sep 22** — Exam 1 will take place in class on Monday, Oct

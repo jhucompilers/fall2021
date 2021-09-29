@@ -19,5 +19,5 @@ for you to review the topics.
 
 For Exam 1:
 
-* [Fall 2020 Exam 1](resources/exam01-628.pdf) (All questions are relevant)
-* [Fall 2020 Exam 2](resources/exam02-628.pdf) (Questions 1–5 are relevant)
+* [Fall 2020 Exam 1](resources/exam01-628.pdf), [Solution](resources/exam01_soln.pdf) (All questions are relevant)
+* [Fall 2020 Exam 2](resources/exam02-628.pdf), [Solution](resources/exam02_soln.pdf) (Questions 1–5 are relevant)
