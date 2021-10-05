@@ -28,12 +28,12 @@ Wed, Sep 22 | ASTs, Interpreters: [slides](lectures/lecture07-public.pdf)  |
 Mon, Sep 27 | Interpreter runtime structures: [slides](lectures/lecture08-public.pdf), Exam 1 review  | <!-- -->
 Wed, Sep 29 | Bottom-up parsing: [slides](lectures/lecture09-public.pdf)  |  EaC 3.4
 Mon, Oct 4 | **Exam 1** in class
-Wed, Oct 6 | <!--Context-sensitive analysis, attribute grammars: [slides](lectures/Context_sensitive_Analysis_I.pdf) --> | <!-- EaC 4.1–4.3--> | A2 due Fri 10/8
-Mon, Oct 11 | <!--Context-sensitive analysis, ad-hoc techniques: [slides](lectures/Context_sensitive_Analysis_II.pdf) --> | <!-- EaC 4.4-->
-Wed, Oct 13 | <!--Compiler project intro, ASTs and symbol tables: [slides](lectures/lecture12-public.pdf) --> | <!-- EaC 5.5-->
-Mon, Oct 18 | <!--Intermediate representations: [slides](lectures/Intermediate_Representations.pdf) --> | <!-- EaC 5.1–5.4 --> | <!-- [A2](assign/assign02.html) due 10/16-->
-Wed, Oct 20 | <!--AST visitors, symbol tables, the procedure abstraction: [slides](lectures/The_Procedure_Abstraction_I.pdf) --> | <!-- EaC Chapter 6-->
-Mon, Oct 25 | <!--Code shape for expressions: [slides](/lectures/Code_Shape_I_Quick_Intro_to_Code_Generation_+_Code_Shape_for_Expressions.pdf) --> | <!-- EaC 7.1–7.4-->
+Wed, Oct 6 | Context-sensitive analysis, attribute grammars: [slides](lectures/Context_sensitive_Analysis_I.pdf) | EaC 4.1–4.3 | [A2](assign/assign02.html) due Fri 10/8
+Mon, Oct 11 | Compiler project intro, ASTs and symbol tables: [slides](lectures/lecture11-public.pdf)  |  
+Wed, Oct 13 | AST visitors, symbol tables, context-sensitive analysis, ad-hoc techniques: [slides](lectures/Context_sensitive_Analysis_II.pdf) | EaC 4.4
+Mon, Oct 18 | Intermediate representations: [slides](lectures/Intermediate_Representations.pdf) | EaC 5.1–5.5 |
+Wed, Oct 20 | <!-- The procedure abstraction: [slides](lectures/The_Procedure_Abstraction_I.pdf) --> | <!-- EaC Chapter 6--> |
+Mon, Oct 25 | <!--Code shape for expressions: [slides](/lectures/Code_Shape_I_Quick_Intro_to_Code_Generation_+_Code_Shape_for_Expressions.pdf) --> | <!-- EaC 7.1–7.4--> |  [A3](assign/assign03.html) due
 Wed, Oct 27 | <!--<b>Exam 2 out</b>, x86-64 assembly language, code generation: [slides](lectures/lecture16-public.pdf) --> | <!-- -->
 Mon, Nov 1 | <!--Arrays and strings: [slides](lectures/Code_Shape_II_Arrays_Aggregates_&_Strings.pdf) --> | <!-- EaC 7.5–7.7 --> | <!-- [A3](assign/assign03.html) due 10/30-->
 Wed, Nov 3 | <!--Boolean and relational expressions, decisions and loops: [slides](lectures/Code_Shape_III_Boolean_and_Relational_Expressions_+_Control_Flow.pdf)  --> | <!-- EaC 7.8 --> | <!-- -->

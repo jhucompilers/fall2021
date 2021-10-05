@@ -12,3 +12,4 @@ Assignment | Due
 ---------- | ---
 [Assignment 1: Mini Calculator](assign/assign01.html) | Wed Sept 15th by 11pm
 [Assignment 2: Interpreter](assign/assign02.html) | Fri Oct 8th by 11pm
+[Assignment 3: Semantic analysis](assign/assign03.html) | Mon Oct 25th by 11pm

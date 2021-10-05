@@ -31,6 +31,9 @@ and/or Gradescope.
 
 ## News
 
+* **Oct 5** — The [Schedule](schedule.html) has been updated. Also,
+  [Assignment 3](assign/assign03.html) is available, and is due Monday,
+  Oct 25th by 11pm.
 * **Sep 29** — Solutions to practice exams 1 and 2 are available on the
   [Resources](resources.html) page.
 * **Sep 27** — For Exam 1, you may bring two sheets of *handwritten*
