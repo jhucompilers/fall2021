@@ -32,11 +32,11 @@ Wed, Oct 6 | Context-sensitive analysis, attribute grammars: [slides](lectures/C
 Mon, Oct 11 | Compiler project intro, ASTs and symbol tables: [slides](lectures/lecture11-public.pdf)  |  
 Wed, Oct 13 | AST visitors, symbol tables, context-sensitive analysis, ad-hoc techniques: [slides](lectures/Context_sensitive_Analysis_II.pdf) | EaC 4.4
 Mon, Oct 18 | Intermediate representations: [slides](lectures/Intermediate_Representations.pdf) | EaC 5.1–5.5 |
-Wed, Oct 20 | <!-- The procedure abstraction: [slides](lectures/The_Procedure_Abstraction_I.pdf) --> | <!-- EaC Chapter 6--> |
-Mon, Oct 25 | <!--Code shape for expressions: [slides](/lectures/Code_Shape_I_Quick_Intro_to_Code_Generation_+_Code_Shape_for_Expressions.pdf) --> | <!-- EaC 7.1–7.4--> |  [A3](assign/assign03.html) due
-Wed, Oct 27 | <!--<b>Exam 2 out</b>, x86-64 assembly language, code generation: [slides](lectures/lecture16-public.pdf) --> | <!-- -->
-Mon, Nov 1 | <!--Arrays and strings: [slides](lectures/Code_Shape_II_Arrays_Aggregates_&_Strings.pdf) --> | <!-- EaC 7.5–7.7 --> | <!-- [A3](assign/assign03.html) due 10/30-->
-Wed, Nov 3 | <!--Boolean and relational expressions, decisions and loops: [slides](lectures/Code_Shape_III_Boolean_and_Relational_Expressions_+_Control_Flow.pdf)  --> | <!-- EaC 7.8 --> | <!-- -->
+Wed, Oct 20 | The procedure abstraction: [slides](lectures/The_Procedure_Abstraction_I.pdf) | EaC Chapter 6 |
+Mon, Oct 25 | Code shape for expressions: [slides](/lectures/Code_Shape_I_Quick_Intro_to_Code_Generation_+_Code_Shape_for_Expressions.pdf) | EaC 7.1–7.4 |  [A3](assign/assign03.html) due
+Wed, Oct 27 | x86-64 assembly language, code generation: [slides](lectures/lecture16-public.pdf) |  | 
+Mon, Nov 1 | Arrays and strings: [slides](lectures/Code_Shape_II_Arrays_Aggregates_&_Strings.pdf) | EaC 7.5–7.7 |
+Wed, Nov 3 | Boolean and relational expressions, decisions and loops: [slides](lectures/Code_Shape_III_Boolean_and_Relational_Expressions_+_Control_Flow.pdf) | EaC 7.8 | 
 Mon, Nov 8 | **Exam 2** in class <!--Intro to Code optimization: [slides](lectures/Introduction_to_Optimization_terminology_&_local_value_numbering.pdf), [slides](lectures/Regional_Optimization_Superlocal_Value_Numbering_and_Loop_Unrolling.pdf) --> | <!-- EaC 8.1–8.5 --> | <!-- -->
 Wed, Nov 10 | <!--Intro to Global optimization, Instruction selection: [slides](lectures/Global_Optimization_Live_Analysis.pdf), [slides](lectures/Introduction_to_Instruction_Selection_and_Peephole_based_Selection.pdf) --> | <!-- EaC 8.6, 11.5-->
 Mon, Nov 15 | <!--Instruction selection, continued --> | <!-- --> | <!-- [A4](assign/assign04.html) due 11/13-->
