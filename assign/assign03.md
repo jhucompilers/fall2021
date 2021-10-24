@@ -3,7 +3,7 @@ layout: default
 title: "Assignment 3: Semantic analysis"
 ---
 
-**Due**: Monday, Oct 25th by 11pm
+**Due**: <strike>Monday, Oct 25th</strike> Wednesday, Oct 27th by 11pm
 
 Points: This assignment is worth 100 points
 
