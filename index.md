@@ -31,6 +31,8 @@ and/or Gradescope.
 
 ## News
 
+* **Oct 26** — [Assignment 4](assign/assign04.html) has been posted,
+  and is due Friday, Nov 12th by 11pm.
 * **Oct 24** — The due date for [Assignment 3](assign/assign03.html)
   has been extended to **Wednesday, Oct 27th** (by 11pm.)
 * **Oct 19** — The [Schedule](schedule.html) has been updated.

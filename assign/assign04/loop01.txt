@@ -1,0 +1,34 @@
+	localaddr vr0, $16
+	readi vr1
+	sti (vr0), vr1
+	localaddr vr0, $0
+	ldci vr1, $1
+	sti (vr0), vr1
+	localaddr vr0, $8
+	ldci vr1, $0
+	sti (vr0), vr1
+	jmp .L1
+.L0:
+	localaddr vr0, $8
+	localaddr vr1, $8
+	localaddr vr2, $0
+	ldi vr3, (vr1)
+	ldi vr4, (vr2)
+	addi vr5, vr3, vr4
+	sti (vr0), vr5
+	localaddr vr0, $0
+	localaddr vr1, $0
+	ldci vr2, $1
+	ldi vr3, (vr1)
+	addi vr4, vr3, vr2
+	sti (vr0), vr4
+.L1:
+	localaddr vr0, $0
+	localaddr vr1, $16
+	ldi vr2, (vr0)
+	ldi vr3, (vr1)
+	cmpi vr2, vr3
+	jlte .L0
+	localaddr vr4, $8
+	ldi vr5, (vr4)
+	writei vr5

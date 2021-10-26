@@ -1,0 +1,39 @@
+	localaddr vr0, $0
+	ldci vr1, $0
+	muli vr2, vr1, $8
+	addi vr3, vr0, vr2
+	ldci vr4, $42
+	sti (vr3), vr4
+	localaddr vr0, $0
+	ldci vr1, $1
+	muli vr2, vr1, $8
+	addi vr3, vr0, vr2
+	ldci vr4, $17
+	sti (vr3), vr4
+	localaddr vr0, $80
+	ldci vr1, $7
+	sti (vr0), vr1
+	localaddr vr0, $0
+	localaddr vr1, $80
+	muli vr2, (vr1), $8
+	addi vr3, vr0, vr2
+	ldci vr4, $99
+	sti (vr3), vr4
+	localaddr vr0, $0
+	ldci vr1, $0
+	muli vr2, vr1, $8
+	addi vr3, vr0, vr2
+	ldi vr4, (vr3)
+	writei vr4
+	localaddr vr0, $0
+	ldci vr1, $1
+	muli vr2, vr1, $8
+	addi vr3, vr0, vr2
+	ldi vr4, (vr3)
+	writei vr4
+	localaddr vr0, $0
+	localaddr vr1, $80
+	muli vr2, (vr1), $8
+	addi vr3, vr0, vr2
+	ldi vr4, (vr3)
+	writei vr4

@@ -1,0 +1,16 @@
+	localaddr vr0, $0
+	readi vr1
+	sti (vr0), vr1
+	localaddr vr0, $8
+	readi vr1
+	sti (vr0), vr1
+	localaddr vr0, $16
+	localaddr vr1, $0
+	localaddr vr2, $8
+	ldi vr3, (vr1)
+	ldi vr4, (vr2)
+	divi vr5, vr3, vr4
+	sti (vr0), vr5
+	localaddr vr0, $16
+	ldi vr1, (vr0)
+	writei vr1
