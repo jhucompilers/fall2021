@@ -309,7 +309,7 @@ Test program | High-level code | Generated x86-64 code
 Note that these translations are by no means the only possible
 translations, or even "good" translations.  In fact, the generated
 x86-64 code is pretty awful!  This is due to the simplistic storage model
-being used.  In [Assignment 5](assign/assign05.html) we'll use techniques
+being used.  In [Assignment 5](assign05.html) we'll use techniques
 such as register allocation and peephole optimization to generate better
 assembly code.
 
