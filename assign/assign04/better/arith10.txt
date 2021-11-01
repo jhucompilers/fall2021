@@ -1,0 +1,7 @@
+	readi vr3
+	mov vr0, vr3
+	readi vr3
+	mov vr1, vr3
+	divi vr3, vr0, vr1
+	mov vr2, vr3
+	writei vr2

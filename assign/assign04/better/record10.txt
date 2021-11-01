@@ -1,0 +1,100 @@
+	ldci vr2, $0
+	mov vr0, vr2
+	jmp .L0
+.L1:
+	localaddr vr3, $0
+	muli vr4, vr0, $16
+	addi vr5, vr3, vr4
+	addi vr6, vr5, $0
+	readi vr7
+	sti (vr6), vr7
+	localaddr vr2, $0
+	muli vr3, vr0, $16
+	addi vr4, vr2, vr3
+	addi vr5, vr4, $8
+	readi vr6
+	sti (vr5), vr6
+	ldci vr2, $1
+	addi vr3, vr0, vr2
+	mov vr0, vr3
+.L0:
+	ldci vr4, $8
+	cmpi vr0, vr4
+	jlt .L1
+	ldci vr5, $0
+	mov vr0, vr5
+	jmp .L2
+.L3:
+	localaddr vr6, $0
+	muli vr7, vr0, $16
+	addi vr8, vr6, vr7
+	addi vr9, vr8, $0
+	ldi vr10, (vr9)
+	writei vr10
+	localaddr vr2, $0
+	muli vr3, vr0, $16
+	addi vr4, vr2, vr3
+	addi vr5, vr4, $8
+	ldi vr6, (vr5)
+	writei vr6
+	ldci vr2, $1
+	addi vr3, vr0, vr2
+	mov vr0, vr3
+.L2:
+	ldci vr4, $8
+	cmpi vr0, vr4
+	jlt .L3
+	ldci vr5, $0
+	mov vr0, vr5
+	jmp .L4
+.L5:
+	localaddr vr6, $0
+	muli vr7, vr0, $16
+	addi vr8, vr6, vr7
+	addi vr9, vr8, $0
+	ldi vr1, (vr9)
+	localaddr vr10, $0
+	muli vr11, vr0, $16
+	addi vr12, vr10, vr11
+	addi vr13, vr12, $0
+	localaddr vr14, $0
+	muli vr15, vr0, $16
+	addi vr16, vr14, vr15
+	addi vr17, vr16, $8
+	ldi vr18, (vr17)
+	sti (vr13), vr18
+	localaddr vr2, $0
+	muli vr3, vr0, $16
+	addi vr4, vr2, vr3
+	addi vr5, vr4, $8
+	sti (vr5), vr1
+	ldci vr2, $1
+	addi vr3, vr0, vr2
+	mov vr0, vr3
+.L4:
+	ldci vr4, $8
+	cmpi vr0, vr4
+	jlt .L5
+	ldci vr5, $0
+	mov vr0, vr5
+	jmp .L6
+.L7:
+	localaddr vr6, $0
+	muli vr7, vr0, $16
+	addi vr8, vr6, vr7
+	addi vr9, vr8, $0
+	ldi vr10, (vr9)
+	writei vr10
+	localaddr vr2, $0
+	muli vr3, vr0, $16
+	addi vr4, vr2, vr3
+	addi vr5, vr4, $8
+	ldi vr6, (vr5)
+	writei vr6
+	ldci vr2, $1
+	addi vr3, vr0, vr2
+	mov vr0, vr3
+.L6:
+	ldci vr4, $8
+	cmpi vr0, vr4
+	jlt .L7

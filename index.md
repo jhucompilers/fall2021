@@ -31,6 +31,9 @@ and/or Gradescope.
 
 ## News
 
+* **Nov 1** — The assignment description for [Assignment 4](assign/assign04.html)
+  has been updated so that the example program translations use the strategy
+  suggested in class of using virtual registers as storage for local variables.
 * **Nov 1** — The files `highlevel.h` and `highlevel.cpp` provided in
   [Assignment 4](assign/assign04.html) have been uploaded to have a
   `HINS_MOV` instruction, which is useful if (as suggested) you use

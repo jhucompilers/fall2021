@@ -300,18 +300,19 @@ Here are some translations of test programs:
 
 Test program | High-level code | Generated x86-64 code
 ------------ | --------------- | ---------------------
-[arith10](https://github.com/jhucompilers/fall2021-tests/blob/master/assign04/input/arith10.in) | [arith10.txt](assign04/arith10.txt) | [arith10.S](assign04/arith10.S)
-[loop01](https://github.com/jhucompilers/fall2021-tests/blob/master/assign04/input/loop01.in) | [loop01.txt](assign04/loop01.txt) | [loop01.S](assign04/loop01.S)
-[array01](https://github.com/jhucompilers/fall2021-tests/blob/master/assign04/input/array01.in) | [array01.txt](assign04/array01.txt) | [array01.S](assign04/array01.S)
-[array02](https://github.com/jhucompilers/fall2021-tests/blob/master/assign04/input/array02.in) | [array02.txt](assign04/array02.txt) | [array02.S](assign04/array02.S)
-[record10](https://github.com/jhucompilers/fall2021-tests/blob/master/assign04/input/record10.in) | [record10.txt](assign04/record10.txt) | [record10.S](assign04/record10.S)
+[arith10](https://github.com/jhucompilers/fall2021-tests/blob/master/assign04/input/arith10.in) | [arith10.txt](assign04/better/arith10.txt) | [arith10.S](assign04/better/arith10.S)
+[loop01](https://github.com/jhucompilers/fall2021-tests/blob/master/assign04/input/loop01.in) | [loop01.txt](assign04/better/loop01.txt) | [loop01.S](assign04/better/loop01.S)
+[array01](https://github.com/jhucompilers/fall2021-tests/blob/master/assign04/input/array01.in) | [array01.txt](assign04/better/array01.txt) | [array01.S](assign04/better/array01.S)
+[array02](https://github.com/jhucompilers/fall2021-tests/blob/master/assign04/input/array02.in) | [array02.txt](assign04/better/array02.txt) | [array02.S](assign04/better/array02.S)
+[record10](https://github.com/jhucompilers/fall2021-tests/blob/master/assign04/input/record10.in) | [record10.txt](assign04/better/record10.txt) | [record10.S](assign04/better/record10.S)
 
 Note that these translations are by no means the only possible
 translations, or even "good" translations.  In fact, the generated
 x86-64 code is pretty awful!  This is due to the simplistic storage model
-being used.  In [Assignment 5](assign05.html) we'll use techniques
-such as register allocation and peephole optimization to generate better
-assembly code.
+being used, where each virtual register in the high-level code is allocated
+storage as a local variable in the x86-64 target code.  In
+[Assignment 5](assign05.html) we'll use techniques such as register allocation
+and peephole optimization to generate better assembly code.
 
 ## Testing
 
