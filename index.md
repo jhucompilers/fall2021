@@ -31,6 +31,11 @@ and/or Gradescope.
 
 ## News
 
+* **Nov 1** — The files `highlevel.h` and `highlevel.cpp` provided in
+  [Assignment 4](assign/assign04.html) have been uploaded to have a
+  `HINS_MOV` instruction, which is useful if (as suggested) you use
+  virtual registers as storage for local variables.  See the
+  assignment description for links to the updated code.
 * **Nov 1** — Exam 2 will take place in class on Monday, Nov 8th.
   Review materials are available on the [Resources](resources.html) page.
   As with Exam 1, you may bring two sheets of handwritten notes to use
