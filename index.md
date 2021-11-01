@@ -31,6 +31,10 @@ and/or Gradescope.
 
 ## News
 
+* **Nov 1** — Exam 2 will take place in class on Monday, Nov 8th.
+  Review materials are available on the [Resources](resources.html) page.
+  As with Exam 1, you may bring two sheets of handwritten notes to use
+  during the exam.
 * **Oct 26** — [Assignment 4](assign/assign04.html) has been posted,
   and is due Friday, Nov 12th by 11pm.
 * **Oct 24** — The due date for [Assignment 3](assign/assign03.html)

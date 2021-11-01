@@ -21,3 +21,12 @@ For Exam 1:
 
 * [Fall 2020 Exam 1](resources/exam01-628.pdf), [Solution](resources/exam01_soln.pdf) (All questions are relevant)
 * [Fall 2020 Exam 2](resources/exam02-628.pdf), [Solution](resources/exam02_soln.pdf) (Questions 1–5 are relevant)
+
+For Exam 2:
+
+* [Fall 2020 Exam 2](resources/exam02-628.pdf), [Solution](resources/exam02_soln.pdf) (Question 6 is relevant)
+* [Fall 2020 Exam 3](resources/exam03-628.pdf), [Solution](resources/exam03_soln.pdf) (Question 1 is relevant)
+
+<!--
+* [Fall 2020 Exam 4](resources/exam04-628.pdf)
+-->
