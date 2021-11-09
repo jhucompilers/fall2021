@@ -31,6 +31,7 @@ and/or Gradescope.
 
 ## News
 
+* **Nov 9** — The [Schedule](schedule.html) has been updated.
 * **Nov 1** — The assignment description for [Assignment 4](assign/assign04.html)
   has been updated so that the example program translations use the strategy
   suggested in class of using virtual registers as storage for local variables.

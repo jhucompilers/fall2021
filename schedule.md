@@ -37,15 +37,17 @@ Mon, Oct 25 | Code shape for expressions: [slides](/lectures/Code_Shape_I_Quick_
 Wed, Oct 27 | x86-64 assembly language, code generation: [slides](lectures/lecture16-public.pdf) |  | 
 Mon, Nov 1 | Arrays and strings: [slides](lectures/Code_Shape_II_Arrays_Aggregates_&_Strings.pdf) | EaC 7.5–7.7 |
 Wed, Nov 3 | Boolean and relational expressions, decisions and loops: [slides](lectures/Code_Shape_III_Boolean_and_Relational_Expressions_+_Control_Flow.pdf) | EaC 7.8 | 
-Mon, Nov 8 | **Exam 2** in class <!--Intro to Code optimization: [slides](lectures/Introduction_to_Optimization_terminology_&_local_value_numbering.pdf), [slides](lectures/Regional_Optimization_Superlocal_Value_Numbering_and_Loop_Unrolling.pdf) --> | <!-- EaC 8.1–8.5 --> | <!-- -->
-Wed, Nov 10 | <!--Intro to Global optimization, Instruction selection: [slides](lectures/Global_Optimization_Live_Analysis.pdf), [slides](lectures/Introduction_to_Instruction_Selection_and_Peephole_based_Selection.pdf) --> | <!-- EaC 8.6, 11.5--> | [A4](assign/assign04.html) due Fri 11/12
-Mon, Nov 15 | <!--Instruction selection, continued --> | <!-- --> | <!-- [A4](assign/assign04.html) due 11/13-->
-Wed, Nov 17 | <!--<b>Exam 3 out</b>, Local register allocation: [slides](lectures/Local_Register_Allocation_and_Lab_1.pdf) --> | <!-- EaC 13.1–13.3-->
+Mon, Nov 8 | **Exam 2** in class
+Wed, Nov 10 | Intro to Code optimization: [slides](lectures/Introduction_to_Optimization_terminology_&_local_value_numbering.pdf), [slides](lectures/Regional_Optimization_Superlocal_Value_Numbering_and_Loop_Unrolling.pdf) | EaC 8.1–8.5 | <!-- -->
+Mon, Nov 15 | Intro to Global optimization, Instruction selection: [slides](lectures/Global_Optimization_Live_Analysis.pdf), [slides](lectures/Introduction_to_Instruction_Selection_and_Peephole_based_Selection.pdf) | EaC 8.6, 11.5 | [A4](assign/assign04.html) due Fri 11/12
+Wed, Nov 17 | Local register allocation: [slides](lectures/Local_Register_Allocation_and_Lab_1.pdf) | EaC 13.1–13.3
 Mon, Nov 22 | *Thanksgiving break*
 Wed, Nov 24 | *Thanksgiving break*
 Mon, Nov 29 | <!--Discussion and [advice](assign/assign05-advice.html) on implementing code optimization -->
 Wed, Dec 1 | <!--Dataflow analysis: [slides](lectures/foster-dataflow.pdf) --> | <!-- EaC 9.1–9.2, [Killdall-POPL73](lectures/killdall-popl73.pdf)-->
-Mon, Dec 6 | <!--Dataflow analysis, continued; [more code optimization advice](lectures/dec02-outline.txt)  --> | <!-- --> | <!-- [A5](assign/assign05.html) due 12/4-->
+Mon, Dec 6 |
+
+<!--Dataflow analysis, continued; [more code optimization advice](lectures/dec02-outline.txt)  --> | <!-- --> | <!-- [A5](assign/assign05.html) due 12/4-->
 
 <!--
 See orig-sched.txt for original schedule for portion of the course
