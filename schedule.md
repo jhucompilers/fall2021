@@ -45,9 +45,8 @@ Mon, Nov 22 | *Thanksgiving break*
 Wed, Nov 24 | *Thanksgiving break*
 Mon, Nov 29 | <!--Discussion and [advice](assign/assign05-advice.html) on implementing code optimization -->
 Wed, Dec 1 | <!--Dataflow analysis: [slides](lectures/foster-dataflow.pdf) --> | <!-- EaC 9.1–9.2, [Killdall-POPL73](lectures/killdall-popl73.pdf)-->
-Mon, Dec 6 |
+Mon, Dec 6 | | | <a href="assign/assign05.html">A5</a> due
 
-<!--Dataflow analysis, continued; [more code optimization advice](lectures/dec02-outline.txt)  --> | <!-- --> | <!-- [A5](assign/assign05.html) due 12/4-->
 
 <!--
 See orig-sched.txt for original schedule for portion of the course

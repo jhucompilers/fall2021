@@ -1,0 +1,136 @@
+	mov vr0, $0
+	jmp .L0
+.L3:
+	localaddr vr7, $0
+	muli vr9, vr0, $10
+	addi vr10, vr9, vr1
+	muli vr11, vr10, $8
+	addi vr12, vr7, vr11
+	readi vr13
+	sti (vr12), vr13
+	addi vr6, vr1, $1
+	mov vr1, vr6
+.L2:
+	cmpi vr1, $10
+	jlt .L3
+	addi vr9, vr0, $1
+	mov vr0, vr9
+.L0:
+	cmpi vr0, $10
+	jlt .L1
+	mov vr0, $0
+	jmp .L4
+.L1:
+	mov vr1, $0
+	jmp .L2
+.L7:
+	localaddr vr13, $800
+	muli vr15, vr0, $10
+	addi vr16, vr15, vr1
+	muli vr17, vr16, $8
+	addi vr18, vr13, vr17
+	readi vr19
+	sti (vr18), vr19
+	addi vr6, vr1, $1
+	mov vr1, vr6
+.L6:
+	cmpi vr1, $10
+	jlt .L7
+	addi vr9, vr0, $1
+	mov vr0, vr9
+.L4:
+	cmpi vr0, $10
+	jlt .L5
+	mov vr0, $0
+	jmp .L8
+.L5:
+	mov vr1, $0
+	jmp .L6
+.L11:
+	localaddr vr13, $1600
+	muli vr15, vr0, $10
+	addi vr16, vr15, vr1
+	muli vr17, vr16, $8
+	addi vr18, vr13, vr17
+	sti (vr18), $0
+	addi vr6, vr1, $1
+	mov vr1, vr6
+.L10:
+	cmpi vr1, $10
+	jlt .L11
+	addi vr9, vr0, $1
+	mov vr0, vr9
+.L8:
+	cmpi vr0, $10
+	jlt .L9
+	mov vr2, $0
+	jmp .L12
+.L9:
+	mov vr1, $0
+	jmp .L10
+.L17:
+	localaddr vr20, $1600
+	muli vr22, vr0, $10
+	addi vr23, vr22, vr1
+	muli vr24, vr23, $8
+	addi vr25, vr20, vr24
+	ldi vr4, (vr25)
+	localaddr vr26, $800
+	muli vr28, vr2, $10
+	addi vr29, vr28, vr1
+	muli vr30, vr29, $8
+	addi vr31, vr26, vr30
+	ldi vr32, (vr31)
+	muli vr33, vr3, vr32
+	addi vr34, vr4, vr33
+	sti (vr25), vr34
+	addi vr6, vr1, $1
+	mov vr1, vr6
+.L16:
+	cmpi vr1, $10
+	jlt .L17
+	addi vr9, vr0, $1
+	mov vr0, vr9
+.L14:
+	cmpi vr0, $10
+	jlt .L15
+	addi vr12, vr2, $1
+	mov vr2, vr12
+.L12:
+	cmpi vr2, $10
+	jlt .L13
+	mov vr0, $0
+	jmp .L18
+.L15:
+	localaddr vr13, $0
+	muli vr15, vr0, $10
+	addi vr16, vr15, vr2
+	muli vr17, vr16, $8
+	addi vr18, vr13, vr17
+	ldi vr3, (vr18)
+	mov vr1, $0
+	jmp .L16
+.L13:
+	mov vr0, $0
+	jmp .L14
+.L19:
+	mov vr1, $0
+	jmp .L20
+.L21:
+	localaddr vr16, $1600
+	muli vr18, vr0, $10
+	addi vr19, vr18, vr1
+	muli vr20, vr19, $8
+	addi vr21, vr16, vr20
+	ldi vr22, (vr21)
+	writei vr22
+	addi vr6, vr1, $1
+	mov vr1, vr6
+.L20:
+	cmpi vr1, $10
+	jlt .L21
+	addi vr9, vr0, $1
+	mov vr0, vr9
+.L18:
+	cmpi vr0, $10
+	jlt .L19

@@ -1,0 +1,14 @@
+	readi vr3
+	mov vr2, vr3
+	mov vr0, $1
+	mov vr1, $0
+	jmp .L0
+.L1:
+	addi vr5, vr1, vr0
+	mov vr1, vr5
+	addi vr7, vr0, $1
+	mov vr0, vr7
+.L0:
+	cmpi vr0, vr2
+	jlte .L1
+	writei vr1

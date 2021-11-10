@@ -1,0 +1,52 @@
+	ldci vr3, $1
+	mov vr1, vr3
+	ldci vr4, $0
+	mov vr2, vr4
+	jmp .L9
+.L1:
+	readi vr5
+	mov vr0, vr5
+	ldci vr3, $0
+	cmpi vr0, vr3
+	jgte .L2
+	ldci vr4, $0
+	mov vr1, vr4
+	jmp .L9
+.L2:
+	ldci vr5, $50
+	cmpi vr0, vr5
+	jlt .L4
+	ldci vr6, $2
+	modi vr7, vr0, vr6
+	ldci vr8, $0
+	cmpi vr7, vr8
+	jne .L6
+	ldci vr9, $1
+	addi vr10, vr2, vr9
+	mov vr2, vr10
+	jmp .L7
+.L6:
+	ldci vr11, $100
+	addi vr12, vr2, vr11
+	mov vr2, vr12
+.L7:
+	jmp .L9
+.L4:
+	ldci vr13, $2
+	modi vr14, vr0, vr13
+	ldci vr15, $0
+	cmpi vr14, vr15
+	jne .L8
+	ldci vr16, $10000
+	addi vr17, vr2, vr16
+	mov vr2, vr17
+	jmp .L9
+.L8:
+	ldci vr18, $1000000
+	addi vr19, vr2, vr18
+	mov vr2, vr19
+.L9:
+	ldci vr20, $0
+	cmpi vr1, vr20
+	jne .L1
+	writei vr2

@@ -31,6 +31,8 @@ and/or Gradescope.
 
 ## News
 
+* **Nov 10** — [Assignment 5](assign/assign05.html) is due Monday, Dec 6th, although
+  you may submit it as late as Friday, Dec 10th for full credit.
 * **Nov 9** — The [Schedule](schedule.html) has been updated.
 * **Nov 1** — The assignment description for [Assignment 4](assign/assign04.html)
   has been updated so that the example program translations use the strategy

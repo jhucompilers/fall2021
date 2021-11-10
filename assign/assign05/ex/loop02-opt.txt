@@ -1,0 +1,7 @@
+	mov vr0, $0
+.L0:
+	addi vr3, vr0, $1
+	mov vr0, vr3
+	writei vr3
+	cmpi vr3, $10
+	jne .L0
