@@ -12,12 +12,10 @@ main:
 	leaq 0(%rsp), %r10          /* localaddr vr1, $0 */
 	movq %r10, 88(%rsp)
 	movq $0, 96(%rsp)           /* ldci vr2, $0 */
-	movq 104(%rsp), %rax        /* muli vr3, vr2, $8 */
-	movq 96(%rsp), %rax
+	movq 96(%rsp), %rax         /* muli vr3, vr2, $8 */
 	imulq $8, %rax
 	movq %rax, 104(%rsp)
-	movq 112(%rsp), %rax        /* addi vr4, vr1, vr3 */
-	movq 88(%rsp), %rax
+	movq 88(%rsp), %rax         /* addi vr4, vr1, vr3 */
 	addq 104(%rsp), %rax
 	movq %rax, 112(%rsp)
 	movq $42, 120(%rsp)         /* ldci vr5, $42 */
@@ -27,12 +25,10 @@ main:
 	leaq 0(%rsp), %r10          /* localaddr vr1, $0 */
 	movq %r10, 88(%rsp)
 	movq $1, 96(%rsp)           /* ldci vr2, $1 */
-	movq 104(%rsp), %rax        /* muli vr3, vr2, $8 */
-	movq 96(%rsp), %rax
+	movq 96(%rsp), %rax         /* muli vr3, vr2, $8 */
 	imulq $8, %rax
 	movq %rax, 104(%rsp)
-	movq 112(%rsp), %rax        /* addi vr4, vr1, vr3 */
-	movq 88(%rsp), %rax
+	movq 88(%rsp), %rax         /* addi vr4, vr1, vr3 */
 	addq 104(%rsp), %rax
 	movq %rax, 112(%rsp)
 	movq $17, 120(%rsp)         /* ldci vr5, $17 */
@@ -44,12 +40,10 @@ main:
 	movq %r10, 80(%rsp)
 	leaq 0(%rsp), %r10          /* localaddr vr2, $0 */
 	movq %r10, 96(%rsp)
-	movq 104(%rsp), %rax        /* muli vr3, vr0, $8 */
-	movq 80(%rsp), %rax
+	movq 80(%rsp), %rax         /* muli vr3, vr0, $8 */
 	imulq $8, %rax
 	movq %rax, 104(%rsp)
-	movq 112(%rsp), %rax        /* addi vr4, vr2, vr3 */
-	movq 96(%rsp), %rax
+	movq 96(%rsp), %rax         /* addi vr4, vr2, vr3 */
 	addq 104(%rsp), %rax
 	movq %rax, 112(%rsp)
 	movq $99, 120(%rsp)         /* ldci vr5, $99 */
@@ -59,12 +53,10 @@ main:
 	leaq 0(%rsp), %r10          /* localaddr vr1, $0 */
 	movq %r10, 88(%rsp)
 	movq $0, 96(%rsp)           /* ldci vr2, $0 */
-	movq 104(%rsp), %rax        /* muli vr3, vr2, $8 */
-	movq 96(%rsp), %rax
+	movq 96(%rsp), %rax         /* muli vr3, vr2, $8 */
 	imulq $8, %rax
 	movq %rax, 104(%rsp)
-	movq 112(%rsp), %rax        /* addi vr4, vr1, vr3 */
-	movq 88(%rsp), %rax
+	movq 88(%rsp), %rax         /* addi vr4, vr1, vr3 */
 	addq 104(%rsp), %rax
 	movq %rax, 112(%rsp)
 	movq 112(%rsp), %r10        /* ldi vr5, (vr4) */
@@ -76,12 +68,10 @@ main:
 	leaq 0(%rsp), %r10          /* localaddr vr1, $0 */
 	movq %r10, 88(%rsp)
 	movq $1, 96(%rsp)           /* ldci vr2, $1 */
-	movq 104(%rsp), %rax        /* muli vr3, vr2, $8 */
-	movq 96(%rsp), %rax
+	movq 96(%rsp), %rax         /* muli vr3, vr2, $8 */
 	imulq $8, %rax
 	movq %rax, 104(%rsp)
-	movq 112(%rsp), %rax        /* addi vr4, vr1, vr3 */
-	movq 88(%rsp), %rax
+	movq 88(%rsp), %rax         /* addi vr4, vr1, vr3 */
 	addq 104(%rsp), %rax
 	movq %rax, 112(%rsp)
 	movq 112(%rsp), %r10        /* ldi vr5, (vr4) */
@@ -92,12 +82,10 @@ main:
 	call printf
 	leaq 0(%rsp), %r10          /* localaddr vr1, $0 */
 	movq %r10, 88(%rsp)
-	movq 96(%rsp), %rax         /* muli vr2, vr0, $8 */
-	movq 80(%rsp), %rax
+	movq 80(%rsp), %rax         /* muli vr2, vr0, $8 */
 	imulq $8, %rax
 	movq %rax, 96(%rsp)
-	movq 104(%rsp), %rax        /* addi vr3, vr1, vr2 */
-	movq 88(%rsp), %rax
+	movq 88(%rsp), %rax         /* addi vr3, vr1, vr2 */
 	addq 96(%rsp), %rax
 	movq %rax, 104(%rsp)
 	movq 104(%rsp), %r10        /* ldi vr4, (vr3) */

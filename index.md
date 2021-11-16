@@ -31,6 +31,9 @@ and/or Gradescope.
 
 ## News
 
+* **Nov 16** — The example low-level (x86-64 assembly) generated code examples
+  in [Assignment 4](assign/assign04.html) have been fixed to remove some
+  unnecessary `movq` instructions.
 * **Nov 10** — [Assignment 5](assign/assign05.html) is due Monday, Dec 6th, although
   you may submit it as late as Friday, Dec 10th for full credit.
 * **Nov 9** — The [Schedule](schedule.html) has been updated.

@@ -16,16 +16,13 @@ main:
 .L1:
 	leaq 0(%rsp), %r10          /* localaddr vr3, $0 */
 	movq %r10, 152(%rsp)
-	movq 160(%rsp), %rax        /* muli vr4, vr0, $16 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* muli vr4, vr0, $16 */
 	imulq $16, %rax
 	movq %rax, 160(%rsp)
-	movq 168(%rsp), %rax        /* addi vr5, vr3, vr4 */
-	movq 152(%rsp), %rax
+	movq 152(%rsp), %rax        /* addi vr5, vr3, vr4 */
 	addq 160(%rsp), %rax
 	movq %rax, 168(%rsp)
-	movq 176(%rsp), %rax        /* addi vr6, vr5, $0 */
-	movq 168(%rsp), %rax
+	movq 168(%rsp), %rax        /* addi vr6, vr5, $0 */
 	addq $0, %rax
 	movq %rax, 176(%rsp)
 	movq $s_readint_fmt, %rdi   /* readi vr7 */
@@ -36,16 +33,13 @@ main:
 	movq %r10, (%r11)
 	leaq 0(%rsp), %r10          /* localaddr vr2, $0 */
 	movq %r10, 144(%rsp)
-	movq 152(%rsp), %rax        /* muli vr3, vr0, $16 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* muli vr3, vr0, $16 */
 	imulq $16, %rax
 	movq %rax, 152(%rsp)
-	movq 160(%rsp), %rax        /* addi vr4, vr2, vr3 */
-	movq 144(%rsp), %rax
+	movq 144(%rsp), %rax        /* addi vr4, vr2, vr3 */
 	addq 152(%rsp), %rax
 	movq %rax, 160(%rsp)
-	movq 168(%rsp), %rax        /* addi vr5, vr4, $8 */
-	movq 160(%rsp), %rax
+	movq 160(%rsp), %rax        /* addi vr5, vr4, $8 */
 	addq $8, %rax
 	movq %rax, 168(%rsp)
 	movq $s_readint_fmt, %rdi   /* readi vr6 */
@@ -55,8 +49,7 @@ main:
 	movq 176(%rsp), %r10
 	movq %r10, (%r11)
 	movq $1, 144(%rsp)          /* ldci vr2, $1 */
-	movq 152(%rsp), %rax        /* addi vr3, vr0, vr2 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* addi vr3, vr0, vr2 */
 	addq 144(%rsp), %rax
 	movq %rax, 152(%rsp)
 	movq 152(%rsp), %r10        /* mov vr0, vr3 */
@@ -73,16 +66,13 @@ main:
 .L3:
 	leaq 0(%rsp), %r10          /* localaddr vr6, $0 */
 	movq %r10, 176(%rsp)
-	movq 184(%rsp), %rax        /* muli vr7, vr0, $16 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* muli vr7, vr0, $16 */
 	imulq $16, %rax
 	movq %rax, 184(%rsp)
-	movq 192(%rsp), %rax        /* addi vr8, vr6, vr7 */
-	movq 176(%rsp), %rax
+	movq 176(%rsp), %rax        /* addi vr8, vr6, vr7 */
 	addq 184(%rsp), %rax
 	movq %rax, 192(%rsp)
-	movq 200(%rsp), %rax        /* addi vr9, vr8, $0 */
-	movq 192(%rsp), %rax
+	movq 192(%rsp), %rax        /* addi vr9, vr8, $0 */
 	addq $0, %rax
 	movq %rax, 200(%rsp)
 	movq 200(%rsp), %r10        /* ldi vr10, (vr9) */
@@ -93,16 +83,13 @@ main:
 	call printf
 	leaq 0(%rsp), %r10          /* localaddr vr2, $0 */
 	movq %r10, 144(%rsp)
-	movq 152(%rsp), %rax        /* muli vr3, vr0, $16 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* muli vr3, vr0, $16 */
 	imulq $16, %rax
 	movq %rax, 152(%rsp)
-	movq 160(%rsp), %rax        /* addi vr4, vr2, vr3 */
-	movq 144(%rsp), %rax
+	movq 144(%rsp), %rax        /* addi vr4, vr2, vr3 */
 	addq 152(%rsp), %rax
 	movq %rax, 160(%rsp)
-	movq 168(%rsp), %rax        /* addi vr5, vr4, $8 */
-	movq 160(%rsp), %rax
+	movq 160(%rsp), %rax        /* addi vr5, vr4, $8 */
 	addq $8, %rax
 	movq %rax, 168(%rsp)
 	movq 168(%rsp), %r10        /* ldi vr6, (vr5) */
@@ -112,8 +99,7 @@ main:
 	movq $s_writeint_fmt, %rdi
 	call printf
 	movq $1, 144(%rsp)          /* ldci vr2, $1 */
-	movq 152(%rsp), %rax        /* addi vr3, vr0, vr2 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* addi vr3, vr0, vr2 */
 	addq 144(%rsp), %rax
 	movq %rax, 152(%rsp)
 	movq 152(%rsp), %r10        /* mov vr0, vr3 */
@@ -130,16 +116,13 @@ main:
 .L5:
 	leaq 0(%rsp), %r10          /* localaddr vr6, $0 */
 	movq %r10, 176(%rsp)
-	movq 184(%rsp), %rax        /* muli vr7, vr0, $16 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* muli vr7, vr0, $16 */
 	imulq $16, %rax
 	movq %rax, 184(%rsp)
-	movq 192(%rsp), %rax        /* addi vr8, vr6, vr7 */
-	movq 176(%rsp), %rax
+	movq 176(%rsp), %rax        /* addi vr8, vr6, vr7 */
 	addq 184(%rsp), %rax
 	movq %rax, 192(%rsp)
-	movq 200(%rsp), %rax        /* addi vr9, vr8, $0 */
-	movq 192(%rsp), %rax
+	movq 192(%rsp), %rax        /* addi vr9, vr8, $0 */
 	addq $0, %rax
 	movq %rax, 200(%rsp)
 	movq 200(%rsp), %r10        /* ldi vr1, (vr9) */
@@ -147,30 +130,24 @@ main:
 	movq %r10, 136(%rsp)
 	leaq 0(%rsp), %r10          /* localaddr vr10, $0 */
 	movq %r10, 208(%rsp)
-	movq 216(%rsp), %rax        /* muli vr11, vr0, $16 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* muli vr11, vr0, $16 */
 	imulq $16, %rax
 	movq %rax, 216(%rsp)
-	movq 224(%rsp), %rax        /* addi vr12, vr10, vr11 */
-	movq 208(%rsp), %rax
+	movq 208(%rsp), %rax        /* addi vr12, vr10, vr11 */
 	addq 216(%rsp), %rax
 	movq %rax, 224(%rsp)
-	movq 232(%rsp), %rax        /* addi vr13, vr12, $0 */
-	movq 224(%rsp), %rax
+	movq 224(%rsp), %rax        /* addi vr13, vr12, $0 */
 	addq $0, %rax
 	movq %rax, 232(%rsp)
 	leaq 0(%rsp), %r10          /* localaddr vr14, $0 */
 	movq %r10, 240(%rsp)
-	movq 248(%rsp), %rax        /* muli vr15, vr0, $16 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* muli vr15, vr0, $16 */
 	imulq $16, %rax
 	movq %rax, 248(%rsp)
-	movq 256(%rsp), %rax        /* addi vr16, vr14, vr15 */
-	movq 240(%rsp), %rax
+	movq 240(%rsp), %rax        /* addi vr16, vr14, vr15 */
 	addq 248(%rsp), %rax
 	movq %rax, 256(%rsp)
-	movq 264(%rsp), %rax        /* addi vr17, vr16, $8 */
-	movq 256(%rsp), %rax
+	movq 256(%rsp), %rax        /* addi vr17, vr16, $8 */
 	addq $8, %rax
 	movq %rax, 264(%rsp)
 	movq 264(%rsp), %r10        /* ldi vr18, (vr17) */
@@ -181,24 +158,20 @@ main:
 	movq %r10, (%r11)
 	leaq 0(%rsp), %r10          /* localaddr vr2, $0 */
 	movq %r10, 144(%rsp)
-	movq 152(%rsp), %rax        /* muli vr3, vr0, $16 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* muli vr3, vr0, $16 */
 	imulq $16, %rax
 	movq %rax, 152(%rsp)
-	movq 160(%rsp), %rax        /* addi vr4, vr2, vr3 */
-	movq 144(%rsp), %rax
+	movq 144(%rsp), %rax        /* addi vr4, vr2, vr3 */
 	addq 152(%rsp), %rax
 	movq %rax, 160(%rsp)
-	movq 168(%rsp), %rax        /* addi vr5, vr4, $8 */
-	movq 160(%rsp), %rax
+	movq 160(%rsp), %rax        /* addi vr5, vr4, $8 */
 	addq $8, %rax
 	movq %rax, 168(%rsp)
 	movq 168(%rsp), %r11        /* sti (vr5), vr1 */
 	movq 136(%rsp), %r10
 	movq %r10, (%r11)
 	movq $1, 144(%rsp)          /* ldci vr2, $1 */
-	movq 152(%rsp), %rax        /* addi vr3, vr0, vr2 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* addi vr3, vr0, vr2 */
 	addq 144(%rsp), %rax
 	movq %rax, 152(%rsp)
 	movq 152(%rsp), %r10        /* mov vr0, vr3 */
@@ -215,16 +188,13 @@ main:
 .L7:
 	leaq 0(%rsp), %r10          /* localaddr vr6, $0 */
 	movq %r10, 176(%rsp)
-	movq 184(%rsp), %rax        /* muli vr7, vr0, $16 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* muli vr7, vr0, $16 */
 	imulq $16, %rax
 	movq %rax, 184(%rsp)
-	movq 192(%rsp), %rax        /* addi vr8, vr6, vr7 */
-	movq 176(%rsp), %rax
+	movq 176(%rsp), %rax        /* addi vr8, vr6, vr7 */
 	addq 184(%rsp), %rax
 	movq %rax, 192(%rsp)
-	movq 200(%rsp), %rax        /* addi vr9, vr8, $0 */
-	movq 192(%rsp), %rax
+	movq 192(%rsp), %rax        /* addi vr9, vr8, $0 */
 	addq $0, %rax
 	movq %rax, 200(%rsp)
 	movq 200(%rsp), %r10        /* ldi vr10, (vr9) */
@@ -235,16 +205,13 @@ main:
 	call printf
 	leaq 0(%rsp), %r10          /* localaddr vr2, $0 */
 	movq %r10, 144(%rsp)
-	movq 152(%rsp), %rax        /* muli vr3, vr0, $16 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* muli vr3, vr0, $16 */
 	imulq $16, %rax
 	movq %rax, 152(%rsp)
-	movq 160(%rsp), %rax        /* addi vr4, vr2, vr3 */
-	movq 144(%rsp), %rax
+	movq 144(%rsp), %rax        /* addi vr4, vr2, vr3 */
 	addq 152(%rsp), %rax
 	movq %rax, 160(%rsp)
-	movq 168(%rsp), %rax        /* addi vr5, vr4, $8 */
-	movq 160(%rsp), %rax
+	movq 160(%rsp), %rax        /* addi vr5, vr4, $8 */
 	addq $8, %rax
 	movq %rax, 168(%rsp)
 	movq 168(%rsp), %r10        /* ldi vr6, (vr5) */
@@ -254,8 +221,7 @@ main:
 	movq $s_writeint_fmt, %rdi
 	call printf
 	movq $1, 144(%rsp)          /* ldci vr2, $1 */
-	movq 152(%rsp), %rax        /* addi vr3, vr0, vr2 */
-	movq 128(%rsp), %rax
+	movq 128(%rsp), %rax        /* addi vr3, vr0, vr2 */
 	addq 144(%rsp), %rax
 	movq %rax, 152(%rsp)
 	movq 152(%rsp), %r10        /* mov vr0, vr3 */

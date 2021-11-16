@@ -22,15 +22,13 @@ main:
 	movq %r10, 8(%rsp)
 	jmp .L0                     /* jmp .L0 */
 .L1:
-	movq 40(%rsp), %rax         /* addi vr5, vr1, vr0 */
-	movq 8(%rsp), %rax
+	movq 8(%rsp), %rax          /* addi vr5, vr1, vr0 */
 	addq 0(%rsp), %rax
 	movq %rax, 40(%rsp)
 	movq 40(%rsp), %r10         /* mov vr1, vr5 */
 	movq %r10, 8(%rsp)
 	movq $1, 48(%rsp)           /* ldci vr6, $1 */
-	movq 56(%rsp), %rax         /* addi vr7, vr0, vr6 */
-	movq 0(%rsp), %rax
+	movq 0(%rsp), %rax          /* addi vr7, vr0, vr6 */
 	addq 48(%rsp), %rax
 	movq %rax, 56(%rsp)
 	movq 56(%rsp), %r10         /* mov vr0, vr7 */
