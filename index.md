@@ -31,6 +31,10 @@ and/or Gradescope.
 
 ## News
 
+* **Nov 17** — The unoptimized and optimized code examples for
+  [Assignment 5](assign/assign05.html) have been updated. Also, the revised
+  `highlevel.h` and `highlevel.cpp` files have been added (they were
+  missing previously.)
 * **Nov 16** — The example low-level (x86-64 assembly) generated code examples
   in [Assignment 4](assign/assign04.html) have been fixed to remove some
   unnecessary `movq` instructions.
