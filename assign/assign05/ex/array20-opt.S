@@ -1,4 +1,4 @@
-/* 26 vregs with storage allocated */
+/* 0 vregs with storage allocated */
 	.section .rodata
 s_readint_fmt: .string "%ld"
 s_writeint_fmt: .string "%ld\n"
@@ -13,7 +13,7 @@ main:
 	pushq %r12
 	pushq %rbx
 	pushq %r15
-	subq $6000208, %rsp
+	subq $6000000, %rsp
 	movq $0, %r14               /* mov vr0, $0 */
 	jmp .L0                     /* jmp .L0 */
 .L3:
@@ -27,11 +27,11 @@ main:
 	movq %rcx, %rsi             /* addi vr12, vr7, vr11 */
 	addq %rdi, %rsi
 	pushq %rsi                  /* readi vr13 */
-	subq $8, %rsp
+	pushq %r8
 	movq $s_readint_fmt, %rdi
 	movq $s_readbuf, %rsi
 	call scanf
-	addq $8, %rsp
+	popq %r8
 	popq %rsi
 	movq s_readbuf, %r8
 	movq %r8, (%rsi)            /* sti (vr12), vr13 */
@@ -63,11 +63,11 @@ main:
 	movq %rcx, %rsi             /* addi vr18, vr13, vr17 */
 	addq %rdi, %rsi
 	pushq %rsi                  /* readi vr19 */
-	subq $8, %rsp
+	pushq %r8
 	movq $s_readint_fmt, %rdi
 	movq $s_readbuf, %rsi
 	call scanf
-	addq $8, %rsp
+	popq %r8
 	popq %rsi
 	movq s_readbuf, %r8
 	movq %r8, (%rsi)            /* sti (vr18), vr19 */
@@ -215,7 +215,7 @@ main:
 .L18:
 	cmpq $500, %r14             /* cmpi vr0, $500 */
 	jl .L19                     /* jlt .L19 */
-	addq $6000208, %rsp
+	addq $6000000, %rsp
 	popq %r15
 	popq %rbx
 	popq %r12

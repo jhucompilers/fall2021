@@ -27,8 +27,7 @@ main:
 	movq 32(%rsp), %r10         /* mov vr0, vr4 */
 	movq %r10, 0(%rsp)
 	movq $1, 40(%rsp)           /* ldci vr5, $1 */
-	movq 48(%rsp), %rax         /* addi vr6, vr1, vr5 */
-	movq 8(%rsp), %rax
+	movq 8(%rsp), %rax          /* addi vr6, vr1, vr5 */
 	addq 40(%rsp), %rax
 	movq %rax, 48(%rsp)
 	movq 48(%rsp), %r10         /* mov vr1, vr6 */

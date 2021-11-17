@@ -1,4 +1,4 @@
-/* 1 vregs with storage allocated */
+/* 0 vregs with storage allocated */
 	.section .rodata
 s_readint_fmt: .string "%ld"
 s_writeint_fmt: .string "%ld\n"
@@ -9,7 +9,7 @@ s_readbuf: .space 8
 	.globl main
 main:
 	pushq %r15
-	subq $16, %rsp
+	subq $0, %rsp
 	movq $0, %r15               /* mov vr0, $0 */
 .L0:
 	movq %r15, %rcx             /* addi vr3, vr0, $1 */
@@ -24,7 +24,7 @@ main:
 	popq %rcx
 	cmpq $10, %rcx              /* cmpi vr3, $10 */
 	jne .L0                     /* jne .L0 */
-	addq $16, %rsp
+	addq $0, %rsp
 	popq %r15
 	movl $0, %eax
 	ret

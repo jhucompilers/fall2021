@@ -106,7 +106,9 @@ scalar local variables as virtual registers, then these typically
 important exception to this observation.)  You could *potentially* use this
 assumption (if it is true!) to simplify the peephole transformations.
 However, a true global live virtual registers analysis is fairly
-straightforward to implement, and is far more robust.  As a general policy,
+straightforward to implement, and is far more robust.  (The provided
+live virtual registers analysis, [live\_vregs.h](live_vregs.h)/[live\_vregs.cpp](live_vregs.cpp),
+does exactly this!)  As a general policy,
 it's best for the compiler to use robust analysis techniques and make
 conservative assumptions, rather than making use of "fragile" knowledge that
 could be invalidated by changes to how code is generated.

@@ -21,20 +21,16 @@ main:
 .L3:
 	leaq 0(%rsp), %r10          /* localaddr vr7, $0 */
 	movq %r10, 2456(%rsp)
-	movq 2464(%rsp), %rax       /* muli vr8, vr0, $80 */
-	movq 2400(%rsp), %rax
+	movq 2400(%rsp), %rax       /* muli vr8, vr0, $80 */
 	imulq $80, %rax
 	movq %rax, 2464(%rsp)
-	movq 2472(%rsp), %rax       /* addi vr9, vr7, vr8 */
-	movq 2456(%rsp), %rax
+	movq 2456(%rsp), %rax       /* addi vr9, vr7, vr8 */
 	addq 2464(%rsp), %rax
 	movq %rax, 2472(%rsp)
-	movq 2480(%rsp), %rax       /* muli vr10, vr1, $8 */
-	movq 2408(%rsp), %rax
+	movq 2408(%rsp), %rax       /* muli vr10, vr1, $8 */
 	imulq $8, %rax
 	movq %rax, 2480(%rsp)
-	movq 2488(%rsp), %rax       /* addi vr11, vr9, vr10 */
-	movq 2472(%rsp), %rax
+	movq 2472(%rsp), %rax       /* addi vr11, vr9, vr10 */
 	addq 2480(%rsp), %rax
 	movq %rax, 2488(%rsp)
 	movq $s_readint_fmt, %rdi   /* readi vr12 */
@@ -44,8 +40,7 @@ main:
 	movq 2496(%rsp), %r10
 	movq %r10, (%r11)
 	movq $1, 2440(%rsp)         /* ldci vr5, $1 */
-	movq 2448(%rsp), %rax       /* addi vr6, vr1, vr5 */
-	movq 2408(%rsp), %rax
+	movq 2408(%rsp), %rax       /* addi vr6, vr1, vr5 */
 	addq 2440(%rsp), %rax
 	movq %rax, 2448(%rsp)
 	movq 2448(%rsp), %r10       /* mov vr1, vr6 */
@@ -56,8 +51,7 @@ main:
 	cmpq 2456(%rsp), %r10
 	jl .L3                      /* jlt .L3 */
 	movq $1, 2464(%rsp)         /* ldci vr8, $1 */
-	movq 2472(%rsp), %rax       /* addi vr9, vr0, vr8 */
-	movq 2400(%rsp), %rax
+	movq 2400(%rsp), %rax       /* addi vr9, vr0, vr8 */
 	addq 2464(%rsp), %rax
 	movq %rax, 2472(%rsp)
 	movq 2472(%rsp), %r10       /* mov vr0, vr9 */
@@ -79,20 +73,16 @@ main:
 .L7:
 	leaq 800(%rsp), %r10        /* localaddr vr13, $800 */
 	movq %r10, 2504(%rsp)
-	movq 2512(%rsp), %rax       /* muli vr14, vr0, $80 */
-	movq 2400(%rsp), %rax
+	movq 2400(%rsp), %rax       /* muli vr14, vr0, $80 */
 	imulq $80, %rax
 	movq %rax, 2512(%rsp)
-	movq 2520(%rsp), %rax       /* addi vr15, vr13, vr14 */
-	movq 2504(%rsp), %rax
+	movq 2504(%rsp), %rax       /* addi vr15, vr13, vr14 */
 	addq 2512(%rsp), %rax
 	movq %rax, 2520(%rsp)
-	movq 2528(%rsp), %rax       /* muli vr16, vr1, $8 */
-	movq 2408(%rsp), %rax
+	movq 2408(%rsp), %rax       /* muli vr16, vr1, $8 */
 	imulq $8, %rax
 	movq %rax, 2528(%rsp)
-	movq 2536(%rsp), %rax       /* addi vr17, vr15, vr16 */
-	movq 2520(%rsp), %rax
+	movq 2520(%rsp), %rax       /* addi vr17, vr15, vr16 */
 	addq 2528(%rsp), %rax
 	movq %rax, 2536(%rsp)
 	movq $s_readint_fmt, %rdi   /* readi vr18 */
@@ -102,8 +92,7 @@ main:
 	movq 2544(%rsp), %r10
 	movq %r10, (%r11)
 	movq $1, 2440(%rsp)         /* ldci vr5, $1 */
-	movq 2448(%rsp), %rax       /* addi vr6, vr1, vr5 */
-	movq 2408(%rsp), %rax
+	movq 2408(%rsp), %rax       /* addi vr6, vr1, vr5 */
 	addq 2440(%rsp), %rax
 	movq %rax, 2448(%rsp)
 	movq 2448(%rsp), %r10       /* mov vr1, vr6 */
@@ -114,8 +103,7 @@ main:
 	cmpq 2456(%rsp), %r10
 	jl .L7                      /* jlt .L7 */
 	movq $1, 2464(%rsp)         /* ldci vr8, $1 */
-	movq 2472(%rsp), %rax       /* addi vr9, vr0, vr8 */
-	movq 2400(%rsp), %rax
+	movq 2400(%rsp), %rax       /* addi vr9, vr0, vr8 */
 	addq 2464(%rsp), %rax
 	movq %rax, 2472(%rsp)
 	movq 2472(%rsp), %r10       /* mov vr0, vr9 */
@@ -137,20 +125,16 @@ main:
 .L11:
 	leaq 1600(%rsp), %r10       /* localaddr vr13, $1600 */
 	movq %r10, 2504(%rsp)
-	movq 2512(%rsp), %rax       /* muli vr14, vr0, $80 */
-	movq 2400(%rsp), %rax
+	movq 2400(%rsp), %rax       /* muli vr14, vr0, $80 */
 	imulq $80, %rax
 	movq %rax, 2512(%rsp)
-	movq 2520(%rsp), %rax       /* addi vr15, vr13, vr14 */
-	movq 2504(%rsp), %rax
+	movq 2504(%rsp), %rax       /* addi vr15, vr13, vr14 */
 	addq 2512(%rsp), %rax
 	movq %rax, 2520(%rsp)
-	movq 2528(%rsp), %rax       /* muli vr16, vr1, $8 */
-	movq 2408(%rsp), %rax
+	movq 2408(%rsp), %rax       /* muli vr16, vr1, $8 */
 	imulq $8, %rax
 	movq %rax, 2528(%rsp)
-	movq 2536(%rsp), %rax       /* addi vr17, vr15, vr16 */
-	movq 2520(%rsp), %rax
+	movq 2520(%rsp), %rax       /* addi vr17, vr15, vr16 */
 	addq 2528(%rsp), %rax
 	movq %rax, 2536(%rsp)
 	movq $0, 2544(%rsp)         /* ldci vr18, $0 */
@@ -158,8 +142,7 @@ main:
 	movq 2544(%rsp), %r10
 	movq %r10, (%r11)
 	movq $1, 2440(%rsp)         /* ldci vr5, $1 */
-	movq 2448(%rsp), %rax       /* addi vr6, vr1, vr5 */
-	movq 2408(%rsp), %rax
+	movq 2408(%rsp), %rax       /* addi vr6, vr1, vr5 */
 	addq 2440(%rsp), %rax
 	movq %rax, 2448(%rsp)
 	movq 2448(%rsp), %r10       /* mov vr1, vr6 */
@@ -170,8 +153,7 @@ main:
 	cmpq 2456(%rsp), %r10
 	jl .L11                     /* jlt .L11 */
 	movq $1, 2464(%rsp)         /* ldci vr8, $1 */
-	movq 2472(%rsp), %rax       /* addi vr9, vr0, vr8 */
-	movq 2400(%rsp), %rax
+	movq 2400(%rsp), %rax       /* addi vr9, vr0, vr8 */
 	addq 2464(%rsp), %rax
 	movq %rax, 2472(%rsp)
 	movq 2472(%rsp), %r10       /* mov vr0, vr9 */
@@ -193,20 +175,16 @@ main:
 .L15:
 	leaq 0(%rsp), %r10          /* localaddr vr13, $0 */
 	movq %r10, 2504(%rsp)
-	movq 2512(%rsp), %rax       /* muli vr14, vr0, $80 */
-	movq 2400(%rsp), %rax
+	movq 2400(%rsp), %rax       /* muli vr14, vr0, $80 */
 	imulq $80, %rax
 	movq %rax, 2512(%rsp)
-	movq 2520(%rsp), %rax       /* addi vr15, vr13, vr14 */
-	movq 2504(%rsp), %rax
+	movq 2504(%rsp), %rax       /* addi vr15, vr13, vr14 */
 	addq 2512(%rsp), %rax
 	movq %rax, 2520(%rsp)
-	movq 2528(%rsp), %rax       /* muli vr16, vr2, $8 */
-	movq 2416(%rsp), %rax
+	movq 2416(%rsp), %rax       /* muli vr16, vr2, $8 */
 	imulq $8, %rax
 	movq %rax, 2528(%rsp)
-	movq 2536(%rsp), %rax       /* addi vr17, vr15, vr16 */
-	movq 2520(%rsp), %rax
+	movq 2520(%rsp), %rax       /* addi vr17, vr15, vr16 */
 	addq 2528(%rsp), %rax
 	movq %rax, 2536(%rsp)
 	movq 2536(%rsp), %r10       /* ldi vr3, (vr17) */
@@ -219,20 +197,16 @@ main:
 .L17:
 	leaq 1600(%rsp), %r10       /* localaddr vr19, $1600 */
 	movq %r10, 2552(%rsp)
-	movq 2560(%rsp), %rax       /* muli vr20, vr0, $80 */
-	movq 2400(%rsp), %rax
+	movq 2400(%rsp), %rax       /* muli vr20, vr0, $80 */
 	imulq $80, %rax
 	movq %rax, 2560(%rsp)
-	movq 2568(%rsp), %rax       /* addi vr21, vr19, vr20 */
-	movq 2552(%rsp), %rax
+	movq 2552(%rsp), %rax       /* addi vr21, vr19, vr20 */
 	addq 2560(%rsp), %rax
 	movq %rax, 2568(%rsp)
-	movq 2576(%rsp), %rax       /* muli vr22, vr1, $8 */
-	movq 2408(%rsp), %rax
+	movq 2408(%rsp), %rax       /* muli vr22, vr1, $8 */
 	imulq $8, %rax
 	movq %rax, 2576(%rsp)
-	movq 2584(%rsp), %rax       /* addi vr23, vr21, vr22 */
-	movq 2568(%rsp), %rax
+	movq 2568(%rsp), %rax       /* addi vr23, vr21, vr22 */
 	addq 2576(%rsp), %rax
 	movq %rax, 2584(%rsp)
 	movq 2584(%rsp), %r10       /* ldi vr4, (vr23) */
@@ -240,59 +214,48 @@ main:
 	movq %r10, 2432(%rsp)
 	leaq 800(%rsp), %r10        /* localaddr vr24, $800 */
 	movq %r10, 2592(%rsp)
-	movq 2600(%rsp), %rax       /* muli vr25, vr2, $80 */
-	movq 2416(%rsp), %rax
+	movq 2416(%rsp), %rax       /* muli vr25, vr2, $80 */
 	imulq $80, %rax
 	movq %rax, 2600(%rsp)
-	movq 2608(%rsp), %rax       /* addi vr26, vr24, vr25 */
-	movq 2592(%rsp), %rax
+	movq 2592(%rsp), %rax       /* addi vr26, vr24, vr25 */
 	addq 2600(%rsp), %rax
 	movq %rax, 2608(%rsp)
-	movq 2616(%rsp), %rax       /* muli vr27, vr1, $8 */
-	movq 2408(%rsp), %rax
+	movq 2408(%rsp), %rax       /* muli vr27, vr1, $8 */
 	imulq $8, %rax
 	movq %rax, 2616(%rsp)
-	movq 2624(%rsp), %rax       /* addi vr28, vr26, vr27 */
-	movq 2608(%rsp), %rax
+	movq 2608(%rsp), %rax       /* addi vr28, vr26, vr27 */
 	addq 2616(%rsp), %rax
 	movq %rax, 2624(%rsp)
 	movq 2624(%rsp), %r10       /* ldi vr29, (vr28) */
 	movq (%r10), %r10
 	movq %r10, 2632(%rsp)
-	movq 2640(%rsp), %rax       /* muli vr30, vr3, vr29 */
-	movq 2424(%rsp), %rax
+	movq 2424(%rsp), %rax       /* muli vr30, vr3, vr29 */
 	imulq 2632(%rsp), %rax
 	movq %rax, 2640(%rsp)
-	movq 2648(%rsp), %rax       /* addi vr31, vr4, vr30 */
-	movq 2432(%rsp), %rax
+	movq 2432(%rsp), %rax       /* addi vr31, vr4, vr30 */
 	addq 2640(%rsp), %rax
 	movq %rax, 2648(%rsp)
 	movq 2648(%rsp), %r10       /* mov vr4, vr31 */
 	movq %r10, 2432(%rsp)
 	leaq 1600(%rsp), %r10       /* localaddr vr32, $1600 */
 	movq %r10, 2656(%rsp)
-	movq 2664(%rsp), %rax       /* muli vr33, vr0, $80 */
-	movq 2400(%rsp), %rax
+	movq 2400(%rsp), %rax       /* muli vr33, vr0, $80 */
 	imulq $80, %rax
 	movq %rax, 2664(%rsp)
-	movq 2672(%rsp), %rax       /* addi vr34, vr32, vr33 */
-	movq 2656(%rsp), %rax
+	movq 2656(%rsp), %rax       /* addi vr34, vr32, vr33 */
 	addq 2664(%rsp), %rax
 	movq %rax, 2672(%rsp)
-	movq 2680(%rsp), %rax       /* muli vr35, vr1, $8 */
-	movq 2408(%rsp), %rax
+	movq 2408(%rsp), %rax       /* muli vr35, vr1, $8 */
 	imulq $8, %rax
 	movq %rax, 2680(%rsp)
-	movq 2688(%rsp), %rax       /* addi vr36, vr34, vr35 */
-	movq 2672(%rsp), %rax
+	movq 2672(%rsp), %rax       /* addi vr36, vr34, vr35 */
 	addq 2680(%rsp), %rax
 	movq %rax, 2688(%rsp)
 	movq 2688(%rsp), %r11       /* sti (vr36), vr4 */
 	movq 2432(%rsp), %r10
 	movq %r10, (%r11)
 	movq $1, 2440(%rsp)         /* ldci vr5, $1 */
-	movq 2448(%rsp), %rax       /* addi vr6, vr1, vr5 */
-	movq 2408(%rsp), %rax
+	movq 2408(%rsp), %rax       /* addi vr6, vr1, vr5 */
 	addq 2440(%rsp), %rax
 	movq %rax, 2448(%rsp)
 	movq 2448(%rsp), %r10       /* mov vr1, vr6 */
@@ -303,8 +266,7 @@ main:
 	cmpq 2456(%rsp), %r10
 	jl .L17                     /* jlt .L17 */
 	movq $1, 2464(%rsp)         /* ldci vr8, $1 */
-	movq 2472(%rsp), %rax       /* addi vr9, vr0, vr8 */
-	movq 2400(%rsp), %rax
+	movq 2400(%rsp), %rax       /* addi vr9, vr0, vr8 */
 	addq 2464(%rsp), %rax
 	movq %rax, 2472(%rsp)
 	movq 2472(%rsp), %r10       /* mov vr0, vr9 */
@@ -315,8 +277,7 @@ main:
 	cmpq 2480(%rsp), %r10
 	jl .L15                     /* jlt .L15 */
 	movq $1, 2488(%rsp)         /* ldci vr11, $1 */
-	movq 2496(%rsp), %rax       /* addi vr12, vr2, vr11 */
-	movq 2416(%rsp), %rax
+	movq 2416(%rsp), %rax       /* addi vr12, vr2, vr11 */
 	addq 2488(%rsp), %rax
 	movq %rax, 2496(%rsp)
 	movq 2496(%rsp), %r10       /* mov vr2, vr12 */
@@ -338,20 +299,16 @@ main:
 .L21:
 	leaq 1600(%rsp), %r10       /* localaddr vr16, $1600 */
 	movq %r10, 2528(%rsp)
-	movq 2536(%rsp), %rax       /* muli vr17, vr0, $80 */
-	movq 2400(%rsp), %rax
+	movq 2400(%rsp), %rax       /* muli vr17, vr0, $80 */
 	imulq $80, %rax
 	movq %rax, 2536(%rsp)
-	movq 2544(%rsp), %rax       /* addi vr18, vr16, vr17 */
-	movq 2528(%rsp), %rax
+	movq 2528(%rsp), %rax       /* addi vr18, vr16, vr17 */
 	addq 2536(%rsp), %rax
 	movq %rax, 2544(%rsp)
-	movq 2552(%rsp), %rax       /* muli vr19, vr1, $8 */
-	movq 2408(%rsp), %rax
+	movq 2408(%rsp), %rax       /* muli vr19, vr1, $8 */
 	imulq $8, %rax
 	movq %rax, 2552(%rsp)
-	movq 2560(%rsp), %rax       /* addi vr20, vr18, vr19 */
-	movq 2544(%rsp), %rax
+	movq 2544(%rsp), %rax       /* addi vr20, vr18, vr19 */
 	addq 2552(%rsp), %rax
 	movq %rax, 2560(%rsp)
 	movq 2560(%rsp), %r10       /* ldi vr21, (vr20) */
@@ -361,8 +318,7 @@ main:
 	movq $s_writeint_fmt, %rdi
 	call printf
 	movq $1, 2440(%rsp)         /* ldci vr5, $1 */
-	movq 2448(%rsp), %rax       /* addi vr6, vr1, vr5 */
-	movq 2408(%rsp), %rax
+	movq 2408(%rsp), %rax       /* addi vr6, vr1, vr5 */
 	addq 2440(%rsp), %rax
 	movq %rax, 2448(%rsp)
 	movq 2448(%rsp), %r10       /* mov vr1, vr6 */
@@ -373,8 +329,7 @@ main:
 	cmpq 2456(%rsp), %r10
 	jl .L21                     /* jlt .L21 */
 	movq $1, 2464(%rsp)         /* ldci vr8, $1 */
-	movq 2472(%rsp), %rax       /* addi vr9, vr0, vr8 */
-	movq 2400(%rsp), %rax
+	movq 2400(%rsp), %rax       /* addi vr9, vr0, vr8 */
 	addq 2464(%rsp), %rax
 	movq %rax, 2472(%rsp)
 	movq 2472(%rsp), %r10       /* mov vr0, vr9 */

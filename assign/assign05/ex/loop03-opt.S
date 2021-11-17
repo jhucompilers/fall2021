@@ -1,4 +1,4 @@
-/* 3 vregs with storage allocated */
+/* 0 vregs with storage allocated */
 	.section .rodata
 s_readint_fmt: .string "%ld"
 s_writeint_fmt: .string "%ld\n"
@@ -10,10 +10,14 @@ s_readbuf: .space 8
 main:
 	pushq %r14
 	pushq %r15
-	subq $24, %rsp
-	movq $s_readint_fmt, %rdi   /* readi vr2 */
+	subq $8, %rsp
+	pushq %rcx                  /* readi vr2 */
+	subq $8, %rsp
+	movq $s_readint_fmt, %rdi
 	movq $s_readbuf, %rsi
 	call scanf
+	addq $8, %rsp
+	popq %rcx
 	movq s_readbuf, %rcx
 	movq %rcx, %r14             /* mov vr0, vr2 */
 	movq $0, %r15               /* mov vr1, $0 */
@@ -34,7 +38,7 @@ main:
 	movq %r15, %rsi             /* writei vr1 */
 	movq $s_writeint_fmt, %rdi
 	call printf
-	addq $24, %rsp
+	addq $8, %rsp
 	popq %r15
 	popq %r14
 	movl $0, %eax
