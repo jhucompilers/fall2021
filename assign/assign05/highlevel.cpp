@@ -1,56 +1,67 @@
-#ifndef HIGHLEVEL_H
-#define HIGHLEVEL_H
+#include <cassert>
+#include "highlevel.h"
 
-#include "cfg.h"
+PrintHighLevelInstructionSequence::PrintHighLevelInstructionSequence(InstructionSequence *ins)
+  : PrintInstructionSequence(ins) {
+}
 
-// "High-level" opcodes
-enum HighLevelOpcode {
-  HINS_NOP,
-  HINS_LOAD_ICONST,
-  HINS_INT_ADD,
-  HINS_INT_SUB,
-  HINS_INT_MUL,
-  HINS_INT_DIV,
-  HINS_INT_MOD,
-  HINS_INT_NEGATE,
-  HINS_LOCALADDR,
-  HINS_LOAD_INT,
-  HINS_STORE_INT,
-  HINS_READ_INT,
-  HINS_WRITE_INT,
-  HINS_JUMP,
-  HINS_JE,
-  HINS_JNE,
-  HINS_JLT,
-  HINS_JLTE,
-  HINS_JGT,
-  HINS_JGTE,
-  HINS_INT_COMPARE,
-  HINS_LEA,
-};
+std::string PrintHighLevelInstructionSequence::get_opcode_name(int opcode) {
+  switch (opcode) {
+  case HINS_NOP:         return "nop";
+  case HINS_LOAD_ICONST: return "ldci";
+  case HINS_INT_ADD:     return "addi";
+  case HINS_INT_SUB:     return "subi";
+  case HINS_INT_MUL:     return "muli";
+  case HINS_INT_DIV:     return "divi";
+  case HINS_INT_MOD:     return "modi";
+  case HINS_INT_NEGATE:  return "negi";
+  case HINS_LOCALADDR:   return "localaddr";
+  case HINS_LOAD_INT:    return "ldi";
+  case HINS_STORE_INT:   return "sti";
+  case HINS_READ_INT:    return "readi";
+  case HINS_WRITE_INT:   return "writei";
+  case HINS_JUMP:        return "jmp";
+  case HINS_JE:          return "je";
+  case HINS_JNE:         return "jne";
+  case HINS_JLT:         return "jlt";
+  case HINS_JLTE:        return "jlte";
+  case HINS_JGT:         return "jgt";
+  case HINS_JGTE:        return "jgte";
+  case HINS_INT_COMPARE: return "cmpi";
+  case HINS_LEA:         return "lea";
 
-class PrintHighLevelInstructionSequence : public PrintInstructionSequence {
-public:
-  PrintHighLevelInstructionSequence(InstructionSequence *ins);
+  default:
+    assert(false);
+    return "<invalid>";
+  }
+}
 
-  virtual std::string get_opcode_name(int opcode);
-  virtual std::string get_mreg_name(int regnum);
-};
+std::string PrintHighLevelInstructionSequence::get_mreg_name(int regnum) {
+  // high level instructions should not use machine registers
+  assert(false);
+  return "<invalid>";
+}
 
-class HighLevelControlFlowGraphBuilder : public ControlFlowGraphBuilder {
-public:
-  HighLevelControlFlowGraphBuilder(InstructionSequence *iseq);
-  virtual ~HighLevelControlFlowGraphBuilder();
+HighLevelControlFlowGraphBuilder::HighLevelControlFlowGraphBuilder(InstructionSequence *iseq)
+  : ControlFlowGraphBuilder(iseq) {
+}
 
-  virtual bool falls_through(Instruction *ins);
-};
+HighLevelControlFlowGraphBuilder::~HighLevelControlFlowGraphBuilder() {
+}
 
-class HighLevelControlFlowGraphPrinter : public ControlFlowGraphPrinter {
-public:
-  HighLevelControlFlowGraphPrinter(ControlFlowGraph *cfg);
-  ~HighLevelControlFlowGraphPrinter();
+bool HighLevelControlFlowGraphBuilder::falls_through(Instruction *ins) {
+  // only unconditional jump instructions don't fall through
+  return ins->get_opcode() != HINS_JUMP;
+}
 
-  virtual void print_basic_block(BasicBlock *bb);
-};
+HighLevelControlFlowGraphPrinter::HighLevelControlFlowGraphPrinter(ControlFlowGraph *cfg)
+  : ControlFlowGraphPrinter(cfg) {
+}
 
-#endif // HIGHLEVEL_H
+HighLevelControlFlowGraphPrinter::~HighLevelControlFlowGraphPrinter() {
+}
+
+void HighLevelControlFlowGraphPrinter::print_basic_block(BasicBlock *bb) {
+  PrintHighLevelInstructionSequence print_hliseq(bb);
+  print_hliseq.print();
+}
