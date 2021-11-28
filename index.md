@@ -31,6 +31,7 @@ and/or Gradescope.
 
 ## News
 
+* **Nov 28** — The [Schedule](schedule.html) has been updated.
 * **Nov 17** — The unoptimized and optimized code examples for
   [Assignment 5](assign/assign05.html) have been updated. Also, the revised
   `highlevel.h` and `highlevel.cpp` files have been added (they were

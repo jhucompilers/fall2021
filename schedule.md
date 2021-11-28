@@ -43,8 +43,8 @@ Mon, Nov 15 | Intro to Global optimization, Instruction selection: [slides](lect
 Wed, Nov 17 | Local register allocation: [slides](lectures/Local_Register_Allocation_and_Lab_1.pdf) | EaC 13.1–13.3
 Mon, Nov 22 | *Thanksgiving break*
 Wed, Nov 24 | *Thanksgiving break*
-Mon, Nov 29 | <!--Discussion and [advice](assign/assign05-advice.html) on implementing code optimization -->
-Wed, Dec 1 | <!--Dataflow analysis: [slides](lectures/foster-dataflow.pdf) --> | <!-- EaC 9.1–9.2, [Killdall-POPL73](lectures/killdall-popl73.pdf)-->
+Mon, Nov 29 | Dataflow analysis: [slides](lectures/foster-dataflow.pdf) | EaC 9.1–9.2, [Killdall-POPL73](lectures/killdall-popl73.pdf)
+Wed, Dec 1 | 
 Mon, Dec 6 | | | <a href="assign/assign05.html">A5</a> due
 
 
