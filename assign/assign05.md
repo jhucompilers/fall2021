@@ -158,9 +158,11 @@ The [cfg\_transform.h](assign05/cfg_transform.h) and [cfg\_transform.cpp](assign
 
 ## Live variables analysis
 
-The [live\_vregs.h](assign05/live_vregs.h) and [live\_vregs.cpp](assign05/live_vregs.cpp) source files implement [global live variables analysis](../lectures/Global_Optimization_Live_Analysis.pdf) for virtual registers.  You may find this useful for determining which instructions are safe to eliminate after local optimizations are applied.  Note that you will need to add the following member functions to the `InstructionSequence` class:
+The [live\_vregs.h](assign05/live_vregs.h) and [live\_vregs.cpp](assign05/live_vregs.cpp) source files implement [global live variables analysis](../lectures/Global_Optimization_Live_Analysis.pdf) for virtual registers.  You may find this useful for determining which instructions are safe to eliminate after local optimizations are applied.  Note that you will need to add the following code to the `InstructionSequence` class:
 
 ```
+typedef std::vector<Instruction *>::const_reverse_iterator const_reverse_iterator;
+
 const_reverse_iterator crbegin() const { return m_instr_seq.crbegin(); }
 const_reverse_iterator crend() const { return m_instr_seq.crend(); }
 ```
