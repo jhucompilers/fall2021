@@ -31,6 +31,8 @@ and/or Gradescope.
 
 ## News
 
+* **Nov 30** — Review materials for Exam 3 are available on the [Resources](resources.html)
+  page.
 * **Nov 28** — The [Schedule](schedule.html) has been updated.
 * **Nov 17** — The unoptimized and optimized code examples for
   [Assignment 5](assign/assign05.html) have been updated. Also, the revised

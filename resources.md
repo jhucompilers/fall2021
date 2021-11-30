@@ -27,6 +27,7 @@ For Exam 2:
 * [Fall 2020 Exam 2](resources/exam02-628.pdf), [Solution](resources/exam02_soln.pdf) (Question 6 is relevant)
 * [Fall 2020 Exam 3](resources/exam03-628.pdf), [Solution](resources/exam03_soln.pdf) (Question 1 is relevant)
 
-<!--
-* [Fall 2020 Exam 4](resources/exam04-628.pdf)
--->
+For Exam 3:
+
+* [Fall 2020 Exam 3](resources/exam03-628.pdf), [Solution](resources/exam03_soln.pdf) (Question 2–3 are relevant)
+* [Fall 2020 Exam 4](resources/exam04-628.pdf), [Solution](resources/exam04_soln.pdf) (Questions 1–4 are relevant)
