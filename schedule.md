@@ -45,7 +45,7 @@ Mon, Nov 22 | *Thanksgiving break*
 Wed, Nov 24 | *Thanksgiving break*
 Mon, Nov 29 | Dataflow analysis: [slides](lectures/foster-dataflow.pdf) | EaC 9.1–9.2, [Killdall-POPL73](lectures/killdall-popl73.pdf)
 Wed, Dec 1 | Code optimization tips, JIT compilation: [slides](lectures/lecture23-public.pdf) | [Gosling-IR95](https://dl.acm.org/doi/pdf/10.1145/202530.202541) |
-Mon, Dec 6 | | | <a href="assign/assign05.html">A5</a> due
+Mon, Dec 6 | Exam 3 review, Static analysis: [slides](lectures/lecture24-public.pdf) | | <a href="assign/assign05.html">A5</a> due
 
 
 <!--
